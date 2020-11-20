@@ -24,6 +24,8 @@ import java.util.Stack;
 public class Day01 extends AppCompatActivity {
 
 //    11.16일 알고리즘 문제
+//  branch 만들어서 push하기
+
 
     TextView answer;
     Stack<SumList> sumLists=new Stack<>();

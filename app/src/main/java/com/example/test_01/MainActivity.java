@@ -14,6 +14,7 @@ import com.example.test_01.Day01.Day01;
 import com.example.test_01.Day02.Day02;
 import com.example.test_01.Day03.Day03;
 import com.example.test_01.Day04.Day04;
+import com.example.test_01.Day05.Day05;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         "Day 02 (20.11.17) : 모의고사",
         "Day 03 (20.11.18) : K번째 수",
         "Day 04 (20.11.19) : 가운데 글자 가져오기",
+        "Day 05 (20.11.20) : 시저 암호",
     };
     ListView listView;
 
@@ -53,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
                             startActivity(intent);
                             break;
                     case 3:intent=new Intent(MainActivity.this, Day04.class);
+                            startActivity(intent);
+                            break;
+                    case 4:intent=new Intent(MainActivity.this, Day05.class);
                             startActivity(intent);
                             break;
                 }
