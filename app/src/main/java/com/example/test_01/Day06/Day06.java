@@ -22,6 +22,8 @@ public class Day06 extends AppCompatActivity {
 
     TextView textView;
     EditText editText;
+
+    // reomve commit
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
