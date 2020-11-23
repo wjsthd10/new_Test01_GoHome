@@ -38,7 +38,7 @@ public class Day06 extends AppCompatActivity {
     }
 
     public void showSolution(){
-
+        // push
         if (editText.getText().toString().equals("")){
             Toast.makeText(this, "숫자 입력하지 않음", Toast.LENGTH_SHORT).show();
 
