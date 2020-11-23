@@ -36,7 +36,7 @@ public class Day06 extends AppCompatActivity {
     public void clickbtn(View view) {
 
         showSolution();
-
+        hidekeyboard(editText);
     }
 
     public void showSolution(){
@@ -89,6 +89,8 @@ public class Day06 extends AppCompatActivity {
             }
         });
     }
+
+    // 동작 후 키패드 숨김
     public void hidekeyboard(EditText et){
         InputMethodManager imm=(InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(et.getWindowToken(),0);
