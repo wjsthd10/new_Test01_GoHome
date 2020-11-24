@@ -98,9 +98,6 @@ public class Day06 extends AppCompatActivity {
 }
 
 
-
-
-
 //        Random random=new Random();
 //        int nNum=random.nextInt(1000-2)+2;
 //        int[] num_arr=new int[nNum];// randomNums
