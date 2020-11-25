@@ -17,6 +17,7 @@ import com.example.test_01.Day04.Day04;
 import com.example.test_01.Day05.Day05;
 import com.example.test_01.Day06.Day06;
 import com.example.test_01.Day07.Day07;
+import com.example.test_01.Day08.Day08;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         "Day 05 (20.11.20) : 시저 암호",
         "Day 06 (20.11.23) : 소수 찾기",
         "Day 07 (20.11.24) : 가장 큰 수",
+        "Day 08 (20.11.25) : 위장",
     };
     ListView listView;
 
@@ -49,25 +51,14 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent;
                 switch (position){
-                    case 0: intent=new Intent(MainActivity.this, Day01.class);
-                            startActivity(intent);
-                            break;
-                    case 1: intent=new Intent(MainActivity.this, Day02.class);
-                            startActivity(intent);
-                            break;
-                    case 2:intent=new Intent(MainActivity.this, Day03.class);
-                            startActivity(intent);
-                            break;
-                    case 3:intent=new Intent(MainActivity.this, Day04.class);
-                            startActivity(intent);
-                            break;
-                    case 4:intent=new Intent(MainActivity.this, Day05.class);
-                            startActivity(intent);
-                            break;
-                    case 5:intent=new Intent(MainActivity.this, Day06.class);
-                            startActivity(intent);
-                    case 6:intent=new Intent(MainActivity.this, Day07.class);
-                            startActivity(intent);
+                    case 0: intent=new Intent(MainActivity.this, Day01.class);startActivity(intent);break;
+                    case 1: intent=new Intent(MainActivity.this, Day02.class);startActivity(intent);break;
+                    case 2:intent=new Intent(MainActivity.this, Day03.class);startActivity(intent);break;
+                    case 3:intent=new Intent(MainActivity.this, Day04.class);startActivity(intent);break;
+                    case 4:intent=new Intent(MainActivity.this, Day05.class);startActivity(intent);break;
+                    case 5:intent=new Intent(MainActivity.this, Day06.class);startActivity(intent);break;
+                    case 6:intent=new Intent(MainActivity.this, Day07.class);startActivity(intent);break;
+                    case 7:intent=new Intent(MainActivity.this, Day08.class);startActivity(intent);break;
                 }
 
 
