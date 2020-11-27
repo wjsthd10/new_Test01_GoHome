@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Test_01">
-        <activity android:name=".Day08.Day08"></activity>
+        <activity android:name=".Day10.Day10"></activity>
+        <activity android:name=".Day09.Day09" />
+        <activity android:name=".Day08.Day08" />
         <activity android:name=".Day07.Day07" />
         <activity android:name=".Day06.Day06" />
         <activity android:name=".Day05.Day05" />
