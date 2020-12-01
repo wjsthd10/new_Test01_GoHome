@@ -88,8 +88,8 @@ public class Day10 extends AppCompatActivity {
 
         }
         Arrays.sort(new ArrayList[]{arrayList}, Collections.reverseOrder());
-        Log.i("test", Arrays.toString(numsSize));
-        Log.i("test", Arrays.toString(arrayList.toArray()));
+        Log.i("test", Arrays.toString(numsSize));// 인덱스번호 갖고있는 배열. 이거랑 같은 숫자를 갖고있는 거 찾기.
+        Log.i("test", Arrays.toString(arrayList.toArray()));// 0빼고 넣음.
 
         Integer[] arr=new Integer[numsSize.length];
         for (int i=0;i<numsSize.length;i++){
@@ -97,15 +97,45 @@ public class Day10 extends AppCompatActivity {
         }
 
         Arrays.sort(arr,Collections.reverseOrder());
-
-        Log.i("arr", Arrays.toString(arr));
-
-
-        for (int i=0; i<numsSize.length;i++){
-
+        int[] arr_num=new int[arr.length];
+        for (int i=0;i<arr.length;i++){
+            arr_num[i]=arr[i];
         }
 
+        Log.i("arr", Arrays.toString(arr));// 큰수부터 정렬한것
 
+
+        String answer_str=answer.keySet().toString()+"  "+answer.values().toString()+"  ";
+
+        int[] numSet=new int[arrayList.size()];
+
+        for (int i=0;i<arrayList.size();i++){
+            if (arr[i]==numsSize[0]){
+                numSet[i]=0;
+            }
+            if (arr[i]==numsSize[1]){
+                numSet[i]=1;
+            }
+            if (arr[i]==numsSize[2]){
+                numSet[i]=2;
+            }
+            if (arr[i]==numsSize[3]){
+                numSet[i]=3;
+            }
+            if (arr[i]==numsSize[4]){
+                numSet[i]=4;
+            }
+            if (arr[i]==numsSize[5]){
+                numSet[i]=5;
+            }
+            if (arr[i]==numsSize[6]){
+                numSet[i]=6;
+            }
+        }
+
+        answer_str+=Arrays.toString(numSet);
+
+        textView.setText(answer_str);
 
     }
 }
