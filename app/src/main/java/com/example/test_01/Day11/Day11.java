@@ -29,8 +29,8 @@ public class Day11 extends AppCompatActivity {
 
     public void clickbtn(View view) {
         Random random=new Random();
-        int k=random.nextInt(50)+1;// 전체 방의 개수
-        int[] room_number=new int[random.nextInt(199)+1];// 손님이 원하는 방번호
+        int k=random.nextInt(1011)+1;// 전체 방의 개수
+        int[] room_number=new int[random.nextInt(199999)+1];// 손님이 원하는 방번호
 
 
         for (int i=0;i<room_number.length;i++){
@@ -62,7 +62,7 @@ public class Day11 extends AppCompatActivity {
         }
 
         if (set_room.size() < maxRoom){// 다안들어갔을때
-            Toast.makeText(this, "if문", Toast.LENGTH_SHORT).show();
+//            Toast.makeText(this, "if문", Toast.LENGTH_SHORT).show();
             for (int i=1; i<maxRoom;i++){
                 Toast.makeText(this, i+"", Toast.LENGTH_SHORT).show();
                 if (set_room.indexOf(i)==-1){

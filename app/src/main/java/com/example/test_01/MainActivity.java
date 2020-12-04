@@ -21,6 +21,7 @@ import com.example.test_01.Day08.Day08;
 import com.example.test_01.Day09.Day09;
 import com.example.test_01.Day10.Day10;
 import com.example.test_01.Day11.Day11;
+import com.example.test_01.Day12.Day12;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         "Day 09 (20.11.26) : 소수 찾기2",
         "Day 10 (20.11.27) : 베스트 앨범",
         "Day 11 (20.11.28) : 호텔 방 배정",
+        "Day 12 (20.12.02) : 최고의 집합",
     };
     ListView listView;
 
@@ -68,6 +70,8 @@ public class MainActivity extends AppCompatActivity {
                     case 8:intent=new Intent(MainActivity.this, Day09.class);startActivity(intent);break;
                     case 9:intent=new Intent(MainActivity.this, Day10.class);startActivity(intent);break;
                     case 10:intent=new Intent(MainActivity.this, Day11.class);startActivity(intent);break;
+                    case 11:intent=new Intent(MainActivity.this, Day12.class);startActivity(intent);break;
+
                 }
             }
         });
